@@ -23,13 +23,13 @@
 
 ## 使い方
 ### 曲の追加
-![曲の追加](./step1_add_song.gif)
+![曲の追加](./gifs/step1_add_song.gif)
 
 ### リザルト追加
-![リザルト追加](./step2_add_result.gif)
+![リザルト追加](./gifs/step2_add_result.gif)
 
 ### プレイ回数のみカウント
-![プレイ回数カウント](./play_count.gif)
+![プレイ回数カウント](./gifs/play_count.gif)
 
 -----
 ## 使用技術
