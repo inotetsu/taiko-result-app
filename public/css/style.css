@@ -1,0 +1,249 @@
+
+body {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FAF3DD;
+}
+
+
+.head {
+    height: 100px;
+    display: flex;
+    background-color: #FF4C4C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleDiv {
+    margin-left: 2%;
+}
+
+.titleName {
+    font-size: 50px;
+}
+
+.menu {
+    margin-right: 3%;
+}
+
+.nav {
+    list-style: none;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 120px;
+}
+
+.inBody {
+    background-color: #FFF5CC;
+    width: 70%;
+    height: 500px !important;
+    border-radius: 10%;
+}
+
+.inInBody {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.addSongs {
+    font-size: 35px;
+}
+
+.addSongBtn {
+    width: 70%;
+    height: 50px;
+}
+
+.difBtn {
+    width: 20%;
+    height: 40px;
+}
+
+.genre {
+    width: 20%;
+    height: 40px;
+    margin-left: 30px;
+}
+
+.div1 {
+    margin-top: 40px;
+}
+
+.div2 {
+    margin-top: 50px;
+}
+
+.div3 {
+    margin-top: 50px;
+}
+
+.addBtn {
+    width: 30%;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.addBtnOpt {
+    margin-top: 50px;
+}
+
+/*曲一覧*/
+
+.songDiv {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.selectMess {
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.size {
+    font-size: 25px;
+}
+
+.serchSongs {
+    width: 15%;
+    height: 40px;
+}
+
+.srbtn {
+    margin-left: 5px;
+}
+
+.srBtn {
+    border-radius: 50px;
+    width: 100px;
+}
+
+.viewSongs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inViewSongs {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    align-items: center;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.linkDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inViewSongs:first-of-type {
+     border-top: 2px solid black;
+}
+
+.song {
+    font-size: 25px;
+    color: black;
+}
+
+.songInfo {
+    width: 30%;
+    text-align: center;
+}
+
+/*ジャンル色*/
+
+.namuori {
+    color: #f55d2a;
+}
+
+.game {
+    color: #df73e8;
+}
+
+.pops {
+    color: #24bfde;
+}
+
+.classic {
+    color: #bdc229;
+}
+
+.anime {
+    color: #eab24a;
+}
+
+.vocaloid {
+    color: #92a19d;
+}
+
+.variety {
+    color: #4beb53;
+}
+
+/*ジャンルここまで*/
+
+/*できない
+
+.trash {
+    color: #FF4C4C !important;
+}
+
+.edit {
+    color: #88c8e3;
+}
+
+*/
+
+/*難易度色*/
+
+.ura {
+    color:#a441ad;
+}
+
+.oni {
+    color: #e64a93;
+}
+
+.hard {
+    color: #084e39;
+}
+
+.normal {
+    color: #13e54b;
+}
+
+.easy {
+    color: #f76363;
+}
+
+/*難易度ここまで*/
+
+.navi {
+    margin-top: 50px;
+}

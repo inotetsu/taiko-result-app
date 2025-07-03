@@ -1,0 +1,356 @@
+/*ヘッダー*/
+
+body {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*背景色*/
+.namori_body{
+    background-color: #ff9868
+}
+
+.game_body {
+    background-color: #ecaeff;
+}
+
+.pops_body {
+    background-color: #a4f0f5;
+}
+
+.classic_body {
+    background-color: #cadb57;
+}
+
+.anime_body {
+    background-color: #ffd187;
+}
+
+.vocaloid_body {
+    background-color: rgb(192, 192, 192);
+}
+
+.variety_body {
+    background-color: #acffb8;
+}
+
+/*背景色ここまで*/
+
+.head {
+    height: 100px;
+    display: flex;
+    background-color: #FF4C4C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*ヘッダー背景色*/
+
+.namori_head{
+    background-color: #FF4C4C;
+}
+
+.game_head {
+    background-color: #b34ef8;
+}
+
+.pops_head {
+    background-color: #24cffc;
+}
+
+.classic_head {
+    background-color: #879249;
+}
+
+.anime_head {
+    background-color: #ff9b4c;
+}
+
+.vocaloid_head {
+    background-color: #7c7777;
+}
+
+.variety_head {
+    background-color: #22a127;
+}
+
+/*ヘッダー背景色ここまで*/
+
+
+.titleDiv {
+    margin-left: 2%;
+}
+
+.titleName {
+    font-size: 50px;
+}
+
+.menu {
+    margin-right: 3%;
+}
+
+.nav {
+    list-style: none;
+}
+
+/*ボディー*/
+
+.songHead {
+    display: flex;
+    justify-content: center;
+}
+
+
+.songName {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.songGenre {
+    width: 160px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.dif {
+    color: #aa5bc2;
+    margin-left: 20px;
+}
+
+.mess {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*入力欄*/
+
+.set {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+
+.inSet {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+/*曲入力欄デザイン*/
+
+.namori_inSet{
+    background-color: #f55d2a;
+}
+
+.game_inSet {
+    background-color: #ac73bc;
+}
+
+.pops_inSet {
+    background-color: #61bdc9;
+}
+
+.classic_inSet {
+    background-color: #8e9c4e;
+}
+
+.anime_inSet {
+    background-color: #eca844;
+}
+
+.vocaloid_inSet {
+    background-color: #989898;
+}
+
+.variety_inSet {
+    background-color: #5cb03d;
+}
+
+/*曲入力欄デザインここまで*/
+
+.inInSet {
+    width: 95%;
+    height: 550px;
+    border-radius: 50px;
+}
+
+/*曲入力欄中身デザイン*/
+
+.namori_inInSet{
+    background-color: #f3a48a;
+}
+
+.game_inInSet {
+    background-color: #f8caff;
+}
+
+.pops_inInSet {
+    background-color: #ccedfc;
+}
+
+.classic_inInSet {
+    background-color: #f9ffc9;
+}
+
+.anime_inInSet {
+    background-color: #ffefb7;
+}
+
+.vocaloid_inInSet {
+    background-color: #e3e3e3;
+}
+
+.variety_inInSet {
+    background-color: #bfffa8;
+}
+
+/*曲入力欄中身デザインここまで*/
+
+.mess {
+    margin-top: 40px;
+}
+
+.size {
+    font-size: 30px;
+}
+
+.result {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.res {
+    width: 100px;
+    height: 40px;
+}
+
+.size2 {
+    font-size: 20px;
+}
+.comment {
+    margin-top: 20px !important;
+}
+
+.inComment {
+    width: 60%;
+}
+
+.inInComment {
+    width: 100%;
+    height: 100px;
+}
+
+.buttonPosition {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btnOpt {
+    width: 200px !important;
+    height: 50px !important;
+}
+
+.add {
+    color: black;
+    font-size: 20px;
+}
+
+/*リザルト*/
+
+.resultViews {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.flexCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.marginOpt {
+    margin-top: 50px;
+}
+
+.widthOpt {
+    width: 70%;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/*リザルト一覧*/
+
+.inResultViews {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.widthOpt2 {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+.widthOpt3 {
+    width: 15%;
+    text-align: center;
+}
+
+.widthOpt4 {
+    width: 10%;
+    text-align: center;
+}
+
+.widthOpt5 {
+    width: 80%;
+}
+
+.linkOpt {
+    color: black;
+    text-decoration: none;
+}
+
+.navi {
+    margin-top: 70px;
+}
+
+.homeLink {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.homeLinkA {
+    text-decoration: none;
+}
