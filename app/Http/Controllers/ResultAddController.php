@@ -72,6 +72,10 @@ class ResultAddController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $result = result::findOrFail($id);
+        $songId = $result->song_id;
+        $result->delete();
+
+        return to_route('song.result',['song' => $songId]);
     }
 }

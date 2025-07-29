@@ -65,6 +65,9 @@ class SongsAddController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $song = song::findOrFail($id);
+        $song->delete();
+        
+        return to_route('home');
     }
 }

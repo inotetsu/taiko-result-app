@@ -15,4 +15,15 @@ class song extends Model
     public function genre(){
         return $this->belongsTo(genre::class);
     }
+
+    public function result(){
+        return $this->hasMany(result::class);
+    }
+
+    // カスケード削除
+    protected static function booted(){
+        static::deleting(function($song){
+            $song->result()->delete();
+        });
+    }
 }

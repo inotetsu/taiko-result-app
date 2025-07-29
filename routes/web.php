@@ -16,4 +16,9 @@ Route::post('/home/song-add',[SongsAddController::class, 'store'])->name('song.s
 Route::get('/home/result/{song}',[ResultAddController::class, 'index'])->name('song.result');
 Route::post('/home/result/{song}/store',[ResultAddController::class, 'store'])->name('song.result.store');
 
+/*曲の削除*/
+Route::get('/home/song-delete/{song}',[SongsAddController::class, 'destroy'])->name('song.destroy');
+
+/*リザルトの削除*/
+Route::get('/home/result-delete/{song}',[ResultAddController::class, 'destroy'])->name('song.result.destroy');
 ?>

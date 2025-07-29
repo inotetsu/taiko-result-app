@@ -199,8 +199,10 @@
                         <div class="widthOpt4">
                             <!--削除アイコン-->
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a xlink:href="{{ route('song.result.destroy',['song' => $result->id]) }}">
                                 <path d="M3 6h18M9 6v12m6-12v12m-9 4h12a2 2 0 002-2V6H5v14a2 2 0 002 2z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                </a>
+                            </svg>
                         </div>
                     </div>
                 </a>
