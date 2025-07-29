@@ -16,5 +16,4 @@ Route::post('/home/song-add',[SongsAddController::class, 'store'])->name('song.s
 Route::get('/home/result/{song}',[ResultAddController::class, 'index'])->name('song.result');
 Route::post('/home/result/{song}/store',[ResultAddController::class, 'store'])->name('song.result.store');
 
-
 ?>
