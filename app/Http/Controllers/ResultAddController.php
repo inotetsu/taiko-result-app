@@ -15,7 +15,7 @@ class ResultAddController extends Controller
     public function index(string $id)
     {
         $song = song::find($id);
-        $results = result::where('song_id',$id)->where('play_count', 0)->get();    /*リザルト取得*/
+        $results = result::where('song_id',$id)->where('play_count', 0)->latest('updated_at')->paginate(10);    /*リザルト取得*/
         $play_count = result::where('song_id',$id)->count();                /*プレイ回数カウント*/
         $full_combo_count = result::where('song_id',$id)->where('full_combo',1)->count();     /*フルコンボ回数カウント*/
         $donda_full_combo_count = result::where('song_id',$id)->where('donda_full_combo',1)->count();     /*ドンだフルコンボ回数カウント*/
