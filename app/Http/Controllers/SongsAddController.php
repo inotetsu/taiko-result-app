@@ -49,15 +49,21 @@ class SongsAddController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $song = song::findOrFail($id);
+
+        return view('update',['song'=>$song]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(SongsAddRequest $request, string $id)
     {
-        //
+        $song = song::findOrFail($id);
+        $updateData = $request->validated();
+        
+        $song->update($updateData);
+        return to_route('home');
     }
 
     /**

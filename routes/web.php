@@ -21,4 +21,11 @@ Route::get('/home/song-delete/{song}',[SongsAddController::class, 'destroy'])->n
 
 /*リザルトの削除*/
 Route::get('/home/result-delete/{song}',[ResultAddController::class, 'destroy'])->name('song.result.destroy');
+
+/*曲情報の編集*/
+Route::get('/home/song-edit/{song}',[SongsAddController::class, 'edit'])->name('song.edit');
+
+/*曲情報アップデート処理*/
+Route::put('/home/song-update/{song}',[SongsAddController::class, 'update'])->name('song.update');
+
 ?>
