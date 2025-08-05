@@ -28,4 +28,10 @@ Route::get('/home/song-edit/{song}',[SongsAddController::class, 'edit'])->name('
 /*曲情報アップデート処理*/
 Route::put('/home/song-update/{song}',[SongsAddController::class, 'update'])->name('song.update');
 
+/*リザルトの編集*/
+Route::get('/home/result-edit/{result}',[ResultAddController::class, 'edit'])->name('song.result.edit');
+
+/*リザルトのアップデート処理*/
+Route::put('/home/result-update/{result}',[ResultAddController::class, 'update'])->name('song.result.update');
+
 ?>

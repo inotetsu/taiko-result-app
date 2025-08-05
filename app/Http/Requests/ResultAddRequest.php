@@ -37,6 +37,7 @@ class ResultAddRequest extends FormRequest
             'full_combo' => ['nullable','integer'],
             'donda_full_combo' => ['nullable','integer'],
             'play_count' => ['nullable','boolea'],
+            'comment' => ['nullable' , 'max:200'],
 
         ];
         }

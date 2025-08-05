@@ -56,15 +56,22 @@ class ResultAddController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $result = result::findOrFail($id);
+        $song = song::with('genre','difficulty')->findOrFail($result->song_id);
+
+        return view('update_result',['result' => $result ,'song' => $song]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(ResultAddRequest $request, string $id)
     {
-        //
+        $result = result::findOrFail($id);
+        $updateData = $request->validated();
+        $result->update($updateData);
+
+        return to_route('song.result',['song'=>$result->song_id]);
     }
 
     /**
