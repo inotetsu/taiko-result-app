@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SongsAddController;
 use App\Http\Controllers\ResultAddController;
+use App\Http\Controllers\ResultDetailController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,5 +34,8 @@ Route::get('/home/result-edit/{result}',[ResultAddController::class, 'edit'])->n
 
 /*リザルトのアップデート処理*/
 Route::put('/home/result-update/{result}',[ResultAddController::class, 'update'])->name('song.result.update');
+
+/*リザルト詳細ページ*/
+Route::get('/home/result-detail/{result}',[ResultDetailController::class, 'index'])->name('song.result.detail');
 
 ?>

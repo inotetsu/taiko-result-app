@@ -1,4 +1,6 @@
 
+/*ヘッダー*/
+
 body {
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
@@ -13,6 +15,14 @@ body {
     background-color: #FF4C4C;
     justify-content: space-between;
     align-items: center;
+}
+
+.homeLinkA {
+    text-decoration: none;
+}
+
+.black {
+    color: black;
 }
 
 .titleDiv {

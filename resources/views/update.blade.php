@@ -17,7 +17,7 @@
     <!--ヘッダー-->
     <div class="head">
         <div class="titleDiv">
-            <span class="titleName">音ゲーリザルト記録!</span>
+            <a href="{{ route('home') }}" class="homeLinkA black"><span class="titleName">音ゲーリザルト記録!</span></a>
         </div>
         <div class="menu">
             <ul class="nav">

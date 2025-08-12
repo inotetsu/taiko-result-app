@@ -46,6 +46,8 @@
         </div>
     </div>
 
+    
+
     <!--ボディー-->
         <p class="songName">{{ $song->title }}</p>
     <div class="songHead">
@@ -65,15 +67,7 @@
         <p class="dif">{{ $song->difficulty->name }}</p>
     </div>
 
-    <?php
-        $full_combo = old('full_combo' , $result->full_combo);
-        $donda_full_combo = old('donda_full_combo' , $result->donda_full_combo);
-    ?>
-
     <!--入力欄-->
-    <form action="{{ route('song.result.update',['result' => $result->id]) }}" method="POST">
-    @csrf
-    @method('PUT')
     <div class="set">
         <div
             @class([
@@ -97,61 +91,54 @@
             'vocaloid_inInSet' => $song->genre_id === 6,
             'variety_inInSet' => $song->genre_id === 7,
             ])>
-                <p class="mess">!!!リザルトを入れてね!!!</p>
+                <p class="mess">!!!リザルト情報!!!</p>
                 <div class="result">
                     <div>
-                        <span class="size">良 : </span><input type="text" class="res" name="good_count" value="{{ old( 'good_count' , $result->good_count ) }}">
+                        <span class="size">良 : {{ $result->good_count }}</span>
                     </div>
                     <div>
-                        <span class="size">可 : </span><input type="text" class="res" name="ok_count" value="{{ old( 'ok_count' , $result->ok_count ) }}">
+                        <span class="size">可 : {{ $result->ok_count }}</span>
                     </div>
                     <div>
-                        <span class="size">不可 : </span><input type="text" class="res" name="miss_count" value="{{ old( 'miss_count' , $result->miss_count ) }}">
+                        <span class="size">不可 : {{ $result->miss_count }}</span>
                     </div>
                     <div>
-                        <span class="size">連打 : </span><input type="text" class="res" name="roll_count" value="{{ old( 'roll_count' , $result->roll_count ) }}">
+                        <span class="size">連打 : {{ $result->roll_count }}</span>
                     </div>
                 </div>
-                <div class="result">
-                    <div>
-                        <span class="size2">フルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="full_combo" value="1" {{ $full_combo == 1 ? 'checked' : '' }}>
+                
+                    <div class="text-align margin-top20">
+                        <span class="size2">
+                            王冠 : 
+                            @if(($result->full_combo === 1 and $result->donda_full_combo ===1) or ($result->full_combo === 0 and $result->donda_full_combo ===1))
+                                ドンフル
+                            @elseif(($result->full_combo === 1 and $result->donda_full_combo ===0))
+                                フルコン
+                            @elseif(($result->full_combo === 0 and $result->donda_full_combo ===0))
+                            @endif
+                        </span>
                     </div>
-                    <div>
-                        <span class="size2">ドンダフルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1" {{ $donda_full_combo == 1 ? 'checked' : '' }}>
+                    <div class="text-align margin-top20">
+                        <span class="size2">登録時間 : {{ $result->created_at }}</span>
                     </div>
-                    <div>
-                        <span class="size2">プレイ回数のみ : </span><input type="checkbox" style="transform: scale(1.5);" name="play_count" value="1">
+                    <div class="text-align margin-top20">
+                        <span class="size2">更新時間 : {{ $result->updated_at }}</span>
                     </div>
-                </div>
+                
                 <div class="result comment">
                     <div class="inComment">
                         <p>コメント</p>
-                        <textarea class="inInComment" name="comment">{{ old('comment',$result->comment) }}</textarea>
+                        <p>{{ $result->comment }}</p>
                     </div>
                 </div>
-                <div class="buttonPosition">
-                    <div>
-                        <button type="submit"
-                        @class([
-                            'btn',
-                            'btn-danger',
-                            'btnOpt',
-                            'namori_inSet' => $song->genre_id === 1,
-                            'game_inSet' => $song->genre_id === 2,
-                            'pops_inSet' => $song->genre_id === 3,
-                            'classic_inSet' => $song->genre_id === 4,
-                            'anime_inSet' => $song->genre_id === 5,
-                            'vocaloid_inSet' => $song->genre_id === 6,
-                            'variety_inSet' => $song->genre_id === 7,
-                        ])>
-                            <span class="add">追加</span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </form>
+
+    <div class="font-size30 margin-top50 text-align">
+        <a href="{{ route('song.result',['song'=>$song]) }}">リザルト一覧へ戻る</a>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

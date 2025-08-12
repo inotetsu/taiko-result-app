@@ -6,6 +6,10 @@ body {
   font-style: normal;
 }
 
+.black {
+    color: black;
+}
+
 /*背景色*/
 .namori_body{
     background-color: #ff9868
@@ -353,4 +357,22 @@ body {
 
 .homeLinkA {
     text-decoration: none;
+}
+
+/* result_detail */
+
+.text-align {
+    text-align: center;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.font-size30 {
+    font-size: 30px;
+}
+
+.margin-top50 {
+    margin-top: 50px;
 }

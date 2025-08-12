@@ -37,7 +37,7 @@
             'variety_head' => $song->genre_id === 7,
             ])>
         <div class="titleDiv">
-            <span class="titleName">音ゲーリザルト記録!</span>
+            <a href="{{ route('home') }}" class="homeLinkA black"><span class="titleName">音ゲーリザルト記録!</span></a>
         </div>
         <div class="menu">
             <ul class="nav">
@@ -178,7 +178,7 @@
             <!-- リザルト一覧 -->
             @foreach($results as $result)
             <div class="widthOpt5">
-                <a href="#" class="linkOpt">
+                <a href="{{ route('song.result.detail',['result' => $result]) }}" class="linkOpt">
                     <div class="widthOpt2 flexAround alignCenter">
                         <div class="widthOpt3">{{ $result->good_count }}</div>
                         <div class="widthOpt3">{{ $result->ok_count }}</div>
