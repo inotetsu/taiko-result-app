@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SongsAddController;
 use App\Http\Controllers\ResultAddController;
 use App\Http\Controllers\ResultDetailController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,5 +38,8 @@ Route::put('/home/result-update/{result}',[ResultAddController::class, 'update']
 
 /*リザルト詳細ページ*/
 Route::get('/home/result-detail/{result}',[ResultDetailController::class, 'index'])->name('song.result.detail');
+
+/*ログインページ*/
+Route::get('/home/login',[UserController::class, 'index'])->name('login');
 
 ?>
