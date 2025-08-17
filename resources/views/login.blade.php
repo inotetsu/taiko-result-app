@@ -42,7 +42,7 @@
                     <button type="submit" class="btn btn-warning width150 height50">ログイン</button>
                 </div>
                 <div class="marginTop30">
-                    <a href="#">新規登録はこちら</a>
+                    <a href="{{ route('register') }}">新規登録はこちら</a>
                 </div>
             </div>
         </div>

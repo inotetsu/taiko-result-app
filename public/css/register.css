@@ -50,8 +50,8 @@ body {
 
 .formBox {
     width: 60%;
-    height: 500px;
-    margin-top: 150px;
+    height: 600px;
+    margin-top: 100px;
     border-radius: 30px;
     background-color: #FFF5CC;
     display: flex;

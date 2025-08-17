@@ -27,29 +27,29 @@
     </div>
 
     <!--ボディー-->
-    <form action="" method="POST">
+    <form action="{{ route('register.store') }}" method="POST">
     @csrf
         <div class="width100">
             <div class="formBox">
                 <p class="fontSize40 marginTop30">新規登録</p>
                 <div class="marginTop30">
-                    <span class="fontSize30">ユーザーネーム : </spam><input type="text">
+                    <span class="fontSize30">ユーザーネーム : </spam><input type="text" name="name">
                 </div>
                 <div class="marginTop30">
-                    <span class="fontSize30">メールアドレス : </spam><input type="email">
+                    <span class="fontSize30">メールアドレス : </spam><input type="email" name="email">
                 </div>
                 <div class="marginTop30">
-                    <span class="fontSize30">パスワード : </spam><input type="password">
+                    <span class="fontSize30">パスワード : </spam><input type="password" name="password">
+                </div>
+                <div class="marginTop30">
+                    <span class="fontSize30">パスワード(確認用) : </spam><input type="password" name="password_confirmation">
                 </div>
                 <div class="marginTop30">
                     <button type="submit" class="btn btn-warning width150 height50">ログイン</button>
                 </div>
-                <div class="marginTop30 flexCenter width80">
+                <div class="marginTop30">
                     <p>
-                        <a href="#">新規登録はこちら</a>
-                    </p>
-                    <p>
-                        <a href="#">ログインページへもどる</a>
+                        <a href="{{ route('login') }}">ログインページへもどる</a>
                     </p>
                 </div>
                 </div>

@@ -45,4 +45,7 @@ Route::get('/home/login',[UserController::class, 'index'])->name('login');
 /*新規登録ページ*/
 Route::get('/home/register',[UserController::class, 'create'])->name('register');
 
+/*新規登録処理*/
+Route::post('/home/register-store',[UserController::class, 'store'])->name('register.store');
+
 ?>
