@@ -42,4 +42,7 @@ Route::get('/home/result-detail/{result}',[ResultDetailController::class, 'index
 /*ログインページ*/
 Route::get('/home/login',[UserController::class, 'index'])->name('login');
 
+/*新規登録ページ*/
+Route::get('/home/register',[UserController::class, 'create'])->name('register');
+
 ?>

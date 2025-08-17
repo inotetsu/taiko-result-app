@@ -1,0 +1,89 @@
+/*ヘッダー*/
+
+body {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FAF3DD;
+}
+
+
+.head {
+    height: 100px;
+    display: flex;
+    background-color: #FF4C4C;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeLinkA {
+    text-decoration: none;
+}
+
+.black {
+    color: black;
+}
+
+.titleDiv {
+    margin-left: 2%;
+}
+
+.titleName {
+    font-size: 50px;
+}
+
+.menu {
+    margin-right: 3%;
+}
+
+.nav {
+    list-style: none;
+}
+
+/*フォーム*/
+
+.width100 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formBox {
+    width: 60%;
+    height: 500px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: #FFF5CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fontSize40 {
+    font-size: 40px;
+}
+
+.marginTop30 {
+    margin-top: 30px;
+}
+
+.fontSize30 {
+    font-size: 20px;
+}
+
+.width150 {
+    width: 150px;
+}
+
+.height50 {
+    height: 50px;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.width80 {
+    width: 80%;
+}
