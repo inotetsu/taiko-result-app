@@ -27,16 +27,16 @@
     </div>
 
     <!--ボディー-->
-    <form action="" method="POST">
+    <form action="{{ route('login.process') }}" method="POST">
     @csrf
         <div class="width100">
             <div class="formBox">
                 <p class="fontSize40 marginTop30">ログイン</p>
                 <div class="marginTop30">
-                    <span class="fontSize30">ユーザーネーム : </spam><input type="text">
+                    <span class="fontSize30">メールアドレス : </spam><input type="email" name="email" value="{{ old('email') }}">
                 </div>
                 <div class="marginTop30">
-                    <span class="fontSize30">パスワード : </spam><input type="password">
+                    <span class="fontSize30">パスワード : </spam><input type="password" name="password">
                 </div>
                 <div class="marginTop30">
                     <button type="submit" class="btn btn-warning width150 height50">ログイン</button>

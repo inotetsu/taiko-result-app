@@ -5,6 +5,7 @@ use App\Http\Controllers\SongsAddController;
 use App\Http\Controllers\ResultAddController;
 use App\Http\Controllers\ResultDetailController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -47,5 +48,8 @@ Route::get('/home/register',[UserController::class, 'create'])->name('register')
 
 /*新規登録処理*/
 Route::post('/home/register-store',[UserController::class, 'store'])->name('register.store');
+
+/*ログイン処理*/
+Route::post('/home/login-process',[AuthController::class, 'login'])->name('login.process');
 
 ?>
