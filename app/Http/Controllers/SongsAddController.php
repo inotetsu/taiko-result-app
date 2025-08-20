@@ -14,7 +14,7 @@ class SongsAddController extends Controller
      */
     public function index()
     {
-        $songs = song::latest('updated_at')->paginate(5);
+        $songs = song::where('user_id',Auth::user()->id)->latest('updated_at')->paginate(5);
         $user = Auth::user();
         return view('index',['songs' => $songs,'user' => $user]);
     }
