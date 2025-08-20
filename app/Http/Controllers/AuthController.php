@@ -11,9 +11,9 @@ class AuthController extends Controller
 {
     public function login(AuthRequest $request)
     {
-        $validated = $request->validated();
+        $credencials = $request->validated();
 
-        if(Auth::attempt($validated)){
+        if(Auth::attempt(['email'=>$credencials['email'],'password'=>$credencials['password']])){
             $request->session()->regenerate();
 
             return to_route('home');

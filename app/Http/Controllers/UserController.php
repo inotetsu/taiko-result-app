@@ -31,7 +31,6 @@ class UserController extends Controller
     public function store(UserAddRequest $request)
     {
         $user = new User($request->validated());
-        $user['password'] = Hash::make($user['password']);
         $user->save();
 
         return to_route('login');
