@@ -21,7 +21,7 @@
         </div>
         <div class="menu">
             <ul class="nav">
-                <li>アカウント名</li>
+                <li>{{ $user->name }}</li>
             </ul>
         </div>
     </div>

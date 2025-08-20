@@ -16,7 +16,7 @@ class AuthController extends Controller
         if(Auth::attempt(['email'=>$credencials['email'],'password'=>$credencials['password']])){
             $request->session()->regenerate();
 
-            return to_route('home');
+            return redirect()->intended('/home');
         }
 
         return back()->onlyInput('email');

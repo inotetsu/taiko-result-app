@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\song;
 use App\Http\Requests\SongsAddRequest;
+use Illuminate\Support\Facades\Auth;
 
 class SongsAddController extends Controller
 {
@@ -14,7 +15,8 @@ class SongsAddController extends Controller
     public function index()
     {
         $songs = song::latest('updated_at')->paginate(5);
-        return view('index',['songs' => $songs]);
+        $user = Auth::user();
+        return view('index',['songs' => $songs,'user' => $user]);
     }
 
     /**
@@ -50,8 +52,9 @@ class SongsAddController extends Controller
     public function edit(string $id)
     {
         $song = song::findOrFail($id);
+        $user = Auth::user();
 
-        return view('update',['song'=>$song]);
+        return view('update',['song'=>$song,'user'=>$user]);
     }
 
     /**
