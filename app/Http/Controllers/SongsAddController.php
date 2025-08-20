@@ -33,6 +33,7 @@ class SongsAddController extends Controller
     public function store(SongsAddRequest $request)
     {
         $song = new song($request->validated());
+        $song->user_id = Auth::user()->id;
         $song->save();
 
         return to_route('home');

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class song extends Model
 {
-    protected $fillable = ['title','difficulty_id','genre_id'];
+    protected $fillable = ['title','user_id','difficulty_id','genre_id'];
 
     public function difficulty(){
         return $this->belongsTo(difficulty::class);
