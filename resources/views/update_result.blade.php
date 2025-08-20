@@ -114,9 +114,11 @@
                 </div>
                 <div class="result">
                     <div>
+                        <input type="hidden" name="full_combo" value="0">
                         <span class="size2">フルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="full_combo" value="1" {{ $full_combo == 1 ? 'checked' : '' }}>
                     </div>
                     <div>
+                        <input type="hidden" name="donda_full_combo" value="0">
                         <span class="size2">ドンダフルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1" {{ $donda_full_combo == 1 ? 'checked' : '' }}>
                     </div>
                     <div>
