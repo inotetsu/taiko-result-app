@@ -52,4 +52,7 @@ Route::post('/home/register-store',[UserController::class, 'store'])->name('regi
 /*ログイン処理*/
 Route::post('/home/login-process',[AuthController::class, 'login'])->name('login.process');
 
+/*ログアウト処理*/
+Route::post('/home/logout',[AuthController::class, 'logout'])->name('logout');
+
 ?>

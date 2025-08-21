@@ -20,9 +20,13 @@
             <span class="titleName">音ゲーリザルト記録!</span>
         </div>
         <div class="menu">
-            <ul class="nav">
-                <li>{{ $user->name }}</li>
-            </ul>
+            <div class="marginRight20">
+                {{ $user->name }}でログイン中
+            </div>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-outline-primary">ログアウト</button>
+            </form>
         </div>
     </div>
 
