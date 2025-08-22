@@ -75,10 +75,12 @@
     <!--曲一覧-->
     <div class="songDiv">
         <p class="selectMess">曲を選ぼう！！</p>
-        <div class="flex">
-            <span class="size">曲検索 : </span><input type="text" class="serchSongs">
-            <p class="srbtn"><button type="button" class="btn btn-warning srBtn">検索</button></p>
-        </div>
+        <form action="{{ route('home') }}" method="GET">
+            <div class="flex">
+                <span class="size">曲検索 : </span><input type="text" class="serchSongs" name="keyword">
+                <p class="srbtn"><button type="submit" class="btn btn-warning srBtn">検索</button></p>
+            </div>
+        </form>
         <!--曲一覧はじまり-->
         @foreach($songs as $song)
         <div class="viewSongs">

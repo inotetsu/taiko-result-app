@@ -12,10 +12,16 @@ class SongsAddController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $songs = song::where('user_id',Auth::user()->id)->latest('updated_at')->paginate(5);
         $user = Auth::user();
+        $keyword = $request->input('keyword');
+
+        if(!empty($keyword)){
+            $songs = song::where('user_id',Auth::user()->id)->where('title','Like',"%{$keyword}%")->latest('updated_at')->paginate(5);
+        }
+
         return view('index',['songs' => $songs,'user' => $user]);
     }
 
