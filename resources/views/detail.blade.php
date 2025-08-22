@@ -166,6 +166,39 @@
                 </div>
             </div>
         </div>
+        <div class="order">
+            <form class="center">
+                <p>
+                    <select name="order" class="orderBtn">
+                        <option value="1">新しい順</option>
+                        <option value="2">古い順</option>
+                        <option value="3">良の数順</option>
+                        <option value="4">可の数順</option>
+                        <option value="5">不可の数順</option>
+                        <option value="6">連打数順</option>
+                        <option value="7">フルコンのみ</option>
+                        <option value="8">ドンフルのみ</option>
+                    </select>
+                </p>
+                <p>
+                <button type="submit"
+                        @class([
+                            'btn',
+                            'btn-danger',
+                            'btnOpt2',
+                            'namori_inSet' => $song->genre_id === 1,
+                            'game_inSet' => $song->genre_id === 2,
+                            'pops_inSet' => $song->genre_id === 3,
+                            'classic_inSet' => $song->genre_id === 4,
+                            'anime_inSet' => $song->genre_id === 5,
+                            'vocaloid_inSet' => $song->genre_id === 6,
+                            'variety_inSet' => $song->genre_id === 7,
+                        ])>
+                            <span class="add">追加</span>
+                </button>
+                </P>
+            </form>
+        </div>
         <div class="inResultViews">
             <div class="widthOpt5">
             <div class="widthOpt2 flexAround alignCenter">

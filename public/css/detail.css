@@ -308,6 +308,27 @@ body {
     font-size: 20px;
 }
 
+/*並び替え*/
+
+.order {
+    margin-top: 50px;
+}
+
+.orderBtn {
+    width: 150px;
+    height: 40px;
+}
+
+.btnOpt2 {
+    width: 100px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*リザルト一覧*/
 
 .inResultViews {
