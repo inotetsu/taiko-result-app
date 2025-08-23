@@ -154,6 +154,7 @@
     </form>
 
 
+
     <!--リザルト一覧-->
     <div class="resultViews">
         <p class="h1">リザルト一覧</p>
@@ -167,17 +168,17 @@
             </div>
         </div>
         <div class="order">
-            <form class="center">
+            <form class="center" action="{{ route('song.result',['song' => $song->id]) }}" method="GET">
                 <p>
                     <select name="order" class="orderBtn">
-                        <option value="1">新しい順</option>
-                        <option value="2">古い順</option>
-                        <option value="3">良の数順</option>
-                        <option value="4">可の数順</option>
-                        <option value="5">不可の数順</option>
-                        <option value="6">連打数順</option>
-                        <option value="7">フルコンのみ</option>
-                        <option value="8">ドンフルのみ</option>
+                        <option value="1" {{ $order == 1 ? 'selected' :  '' }}>新しい順</option>
+                        <option value="2" {{ $order == 2 ? 'selected' :  '' }}>古い順</option>
+                        <option value="3" {{ $order == 3 ? 'selected' :  '' }}>良の数順</option>
+                        <option value="4" {{ $order == 4 ? 'selected' :  '' }}>可の数順</option>
+                        <option value="5" {{ $order == 5 ? 'selected' :  '' }}>不可の数順</option>
+                        <option value="6" {{ $order == 6 ? 'selected' :  '' }}>連打数順</option>
+                        <option value="7" {{ $order == 7 ? 'selected' :  '' }}>フルコンのみ</option>
+                        <option value="8" {{ $order == 8 ? 'selected' :  '' }}>ドンフルのみ</option>
                     </select>
                 </p>
                 <p>
