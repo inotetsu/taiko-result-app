@@ -20,12 +20,12 @@
             <span class="titleName">音ゲーリザルト記録!</span>
         </div>
         <div class="menu">
-            <div class="marginRight20">
+            <div class="marginRight20 font12">
                 {{ $user->name }}でログイン中
             </div>
             <form action="{{ route('logout') }}" method="post">
                 @csrf
-                <button type="submit" class="btn btn-outline-primary">ログアウト</button>
+                <button type="submit" class="btn btn-outline-primary width40">ログアウト</button>
             </form>
         </div>
     </div>
@@ -90,7 +90,7 @@
                     <div class="songInfo">
                         <span class="song">{{ $song->title }}</span>
                     </div>
-                    <div class="songInfo">
+                    <div class="songInfo width10">
                         <span 
                             @class([
                                 'song',
@@ -119,7 +119,7 @@
                             {{ $song->genre->name }}
                         </span>
                     </div>
-                    <div>
+                    <div class="center">
                         <!-- ゴミ箱アイコン -->
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <a xlink:href="{{ route('song.destroy',['song' => $song->id]) }}">
