@@ -40,12 +40,12 @@
             <a href="{{ route('home') }}" class="homeLinkA black"><span class="titleName">音ゲーリザルト記録!</span></a>
         </div>
         <div class="menu">
-            <div class="marginRight20">
+            <div class="marginRight20 font12">
                 {{ $user->name }}でログイン中
             </div>
             <form action="{{ route('logout') }}" method="post">
                 @csrf
-                <button type="submit" class="btn btn-outline-primary">ログアウト</button>
+                <button type="submit" class="btn btn-outline-primary width40">ログアウト</button>
             </form>
         </div>
     </div>
@@ -98,25 +98,29 @@
             'variety_inInSet' => $song->genre_id === 7,
             ])>
                 <p class="mess">!!!リザルトを入れてね!!!</p>
-                <div class="result">
-                    <div>
+                <div class="result column1">
+                    <div class="flex">
+                    <div class="marginOptGood">
                         <span class="size">良 : </span><input type="text" class="res" name="good_count">
                     </div>
-                    <div>
+                    <div class="marginOptOk">
                         <span class="size">可 : </span><input type="text" class="res" name="ok_count">
                     </div>
-                    <div>
+                    </div>
+                    <div class="flex">
+                    <div class="marginOptMiss">
                         <span class="size">不可 : </span><input type="text" class="res" name="miss_count">
                     </div>
-                    <div>
+                    <div class="marginOptRoll">
                         <span class="size">連打 : </span><input type="text" class="res" name="roll_count">
                     </div>
+                    </div>
                 </div>
-                <div class="result">
-                    <div>
+                <div class="result column2">
+                    <div class="marginBottom5">
                         <span class="size2">フルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="full_combo" value="1">
                     </div>
-                    <div>
+                    <div class="marginBottom5">
                         <span class="size2">ドンダフルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1">
                     </div>
                     <div>

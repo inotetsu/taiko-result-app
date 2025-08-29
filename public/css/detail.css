@@ -104,6 +104,63 @@ body {
     margin-right: 20px;
 }
 
+@media screen and (max-width:826px){
+    .titleName {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .titleName {
+        font-size: 35px;
+    }
+
+    .font12 {
+        font-size: 12px;
+    }
+
+    .width40 {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:590px){
+    .titleName {
+        font-size: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .marginRight20 {
+        margin-right: 0 !important;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .titleName {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .titleName {
+        font-size: 20px;
+    }
+
+    .font12 {
+        font-size: 10px;
+    }
+
+    .width40 {
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
 /*ボディー*/
 
 .songHead {
@@ -154,6 +211,12 @@ body {
     border-radius: 50px;
 }
 
+@media screen and (max-width:838px) {
+    .inSet {
+        height: 700px;
+    }
+}
+
 /*曲入力欄デザイン*/
 
 .namori_inSet{
@@ -190,6 +253,12 @@ body {
     width: 95%;
     height: 550px;
     border-radius: 50px;
+}
+
+@media screen and (max-width:838px) {
+    .inInSet {
+        height: 650px;
+    }
 }
 
 /*曲入力欄中身デザイン*/
@@ -238,6 +307,12 @@ body {
     margin-top: 50px;
 }
 
+.flex {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
 .res {
     width: 100px;
     height: 40px;
@@ -274,6 +349,148 @@ body {
     color: black;
     font-size: 20px;
 }
+
+@media screen and (max-width:1164px) {
+    .res {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width:921px) {
+    .column1 {
+        flex-direction: column;
+    }
+
+    .flex {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .marginOptGood {
+        margin-left: 100px;
+    }
+
+    .marginOptOk {
+        margin-right: 100px;
+    }
+
+    .marginOptMiss {
+        margin-left: 70px;
+    }
+
+    .marginOptRoll {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:838px) {
+    .column2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marginBottom5 {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width:725px) {
+    .inSet {
+        width: 85%;
+    }
+
+    .songName {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:603px) {
+
+    .marginOptGood {
+        margin-left: 70px;
+    }
+
+    .marginOptOk {
+        margin-right: 80px;
+    }
+
+    .marginOptMiss {
+        margin-left: 40px;
+    }
+
+    .marginOptRoll {
+        margin-right: 80px;
+    }
+
+    .songName {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width:543px) {
+
+    .mess {
+        font-size: 25px;
+    }
+
+    .marginOptGood {
+        margin-left: 40px;
+    }
+
+    .marginOptOk {
+        margin-right: 40px;
+    }
+
+    .marginOptMiss {
+        margin-left: 10px;
+    }
+
+    .marginOptRoll {
+        margin-right: 40px;
+    }
+
+}
+
+@media screen and (max-width:476px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .size {
+        font-size: 25px;
+    }
+
+    .marginOptGood {
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+
+    .marginOptOk {
+        margin-right: 0;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+
+    .marginOptMiss {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .marginOptRoll {
+        margin-right: 0;
+    }
+
+    .inSet {
+        height: 850px;
+    }
+
+    .inInSet {
+        height: 800px;
+    }
+}
+
 
 /*リザルト*/
 
