@@ -211,11 +211,6 @@ body {
     border-radius: 50px;
 }
 
-@media screen and (max-width:838px) {
-    .inSet {
-        height: 700px;
-    }
-}
 
 /*曲入力欄デザイン*/
 
@@ -255,11 +250,6 @@ body {
     border-radius: 50px;
 }
 
-@media screen and (max-width:838px) {
-    .inInSet {
-        height: 650px;
-    }
-}
 
 /*曲入力欄中身デザイン*/
 
@@ -379,7 +369,7 @@ body {
     }
 
     .marginOptRoll {
-        margin-right: 100px;
+        margin-right: 87px;
     }
 }
 
@@ -420,7 +410,7 @@ body {
     }
 
     .marginOptRoll {
-        margin-right: 80px;
+        margin-right: 65px;
     }
 
     .songName {
@@ -447,7 +437,7 @@ body {
     }
 
     .marginOptRoll {
-        margin-right: 40px;
+        margin-right: 25px;
     }
 
 }
@@ -463,31 +453,32 @@ body {
     }
 
     .marginOptGood {
-        margin-left: 25px;
+        margin-left: 40px;
         margin-bottom: 5px;
     }
 
     .marginOptOk {
         margin-right: 0;
-        margin-left: 25px;
+        margin-left: 0;
         margin-bottom: 5px;
     }
 
     .marginOptMiss {
         margin-left: 0;
+        margin-right: 25px;
         margin-bottom: 5px;
     }
 
     .marginOptRoll {
-        margin-right: 0;
+        margin-right: 15px;
     }
 
     .inSet {
-        height: 850px;
+        height: 750px;
     }
 
     .inInSet {
-        height: 800px;
+        height: 700px;
     }
 }
 
@@ -497,6 +488,13 @@ body {
         font-size: 20px;
     }
     
+}
+
+@media screen and (max-width:320px) {
+
+    .size2 {
+        font-size: 16px;
+    }
 }
 
 
@@ -549,73 +547,20 @@ body {
     }
 }
 
-/*並び替え*/
-
-.order {
-    margin-top: 50px;
-}
-
-.orderBtn {
-    width: 150px;
-    height: 40px;
-}
-
-.btnOpt2 {
-    width: 100px;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*リザルト一覧*/
-
-.inResultViews {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.widthOpt2 {
-    width: 100%;
-    height: 60px;
-    border-bottom: 2px solid black;
-}
-
-.alignCenter {
-    align-items: center;
-}
-
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-}
-
-.widthOpt3 {
-    width: 15%;
+.text-align {
     text-align: center;
 }
 
-.widthOpt4 {
-    width: 10%;
-    text-align: center;
+.margin-top20 {
+    margin-top: 20px;
 }
 
-.widthOpt5 {
-    width: 80%;
+.margin-top50 {
+    margin-top: 50px;
 }
 
-.linkOpt {
-    color: black;
-    text-decoration: none;
-}
-
-.navi {
-    margin-top: 70px;
+.font-size30 {
+    font-size: 30px;
 }
 
 .homeLink {
@@ -627,38 +572,3 @@ body {
     text-decoration: none;
 }
 
-@media screen and (max-width:725px) {
-
-    .widthOpt5 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:461px) {
-
-    .widthOpt3 {
-        font-size: 12px;
-    }
-
-    .widthOpt4 {
-        font-size: 12px;
-    }
-}
-
-/* result_detail */
-
-.text-align {
-    text-align: center;
-}
-
-.margin-top20 {
-    margin-top: 20px;
-}
-
-.font-size30 {
-    font-size: 30px;
-}
-
-.margin-top50 {
-    margin-top: 50px;
-}

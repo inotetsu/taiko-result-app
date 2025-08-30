@@ -165,8 +165,8 @@
         <div class="flexCenter marginOpt">
             <div class="widthOpt">
                 <div class="data">
-                    <p>プレイ回数 : {{ $play_count }}</p>
-                    <p>フルコンボ : {{ $full_combo_count }}</p>
+                    <p class="marginBottom5">プレイ回数 : {{ $play_count }}</p>
+                    <p class="marginBottom5">フルコンボ : {{ $full_combo_count }}</p>
                     <p>ドンダフルコンボ : {{ $donda_full_combo_count }}</p>
                 </div>
             </div>

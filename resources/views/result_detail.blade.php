@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="{{ asset('css/detail.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/result_detail.css') }}" rel="stylesheet" type="text/css">
 
     <!--フォント読み込み-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,12 +40,12 @@
             <a href="{{ route('home') }}" class="homeLinkA black"><span class="titleName">音ゲーリザルト記録!</span></a>
         </div>
         <div class="menu">
-            <div class="marginRight20">
+            <div class="marginRight20 font12">
                 {{ $user->name }}でログイン中
             </div>
             <form action="{{ route('logout') }}" method="post">
                 @csrf
-                <button type="submit" class="btn btn-outline-primary">ログアウト</button>
+                <button type="submit" class="btn btn-outline-primary width40">ログアウト</button>
             </form>
         </div>
     </div>
@@ -96,18 +96,22 @@
             'variety_inInSet' => $song->genre_id === 7,
             ])>
                 <p class="mess">!!!リザルト情報!!!</p>
-                <div class="result">
-                    <div>
-                        <span class="size">良 : {{ $result->good_count }}</span>
+                <div class="result column1">
+                    <div class="flex">
+                        <div class="marginOptGood">
+                            <span class="size">良 : {{ $result->good_count }}</span>
+                        </div>
+                        <div class="marginOptOk">
+                            <span class="size">可 : {{ $result->ok_count }}</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="size">可 : {{ $result->ok_count }}</span>
-                    </div>
-                    <div>
-                        <span class="size">不可 : {{ $result->miss_count }}</span>
-                    </div>
-                    <div>
-                        <span class="size">連打 : {{ $result->roll_count }}</span>
+                    <div class="flex">
+                        <div class="marginOptMiss">
+                            <span class="size">不可 : {{ $result->miss_count }}</span>
+                        </div>
+                        <div class="marginOptRoll">
+                            <span class="size">連打 : {{ $result->roll_count }}</span>
+                        </div>
                     </div>
                 </div>
                 
