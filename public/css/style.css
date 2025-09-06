@@ -234,6 +234,14 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width:396px){
+
+    .inViewSongs {
+        width: 100%;
+    }
+
+}
+
 .link {
     display: block;
     width: 100%;
