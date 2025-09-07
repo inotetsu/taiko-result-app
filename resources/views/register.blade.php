@@ -20,9 +20,6 @@
             <span class="titleName">音ゲーリザルト記録!</span>
         </div>
         <div class="menu">
-            <ul class="nav">
-                <li>アカウント名</li>
-            </ul>
         </div>
     </div>
 
@@ -32,17 +29,17 @@
         <div class="width100">
             <div class="formBox">
                 <p class="fontSize40 marginTop30">新規登録</p>
-                <div class="marginTop30">
-                    <span class="fontSize30">ユーザーネーム : </spam><input type="text" name="name">
+                <div class="marginTop30 widthMax paddingOpt">
+                    <span class="fontSize30">ユーザーネーム : </spam><br><input type="text" name="name" class="name">
                 </div>
-                <div class="marginTop30">
-                    <span class="fontSize30">メールアドレス : </spam><input type="email" name="email">
+                <div class="marginTop30 widthMax paddingOpt">
+                    <span class="fontSize30">メールアドレス : </spam><br><input type="email" name="email" class="email">
                 </div>
-                <div class="marginTop30">
-                    <span class="fontSize30">パスワード : </spam><input type="password" name="password">
+                <div class="marginTop30 widthMax paddingOpt">
+                    <span class="fontSize30">パスワード : </spam><br><input type="password" name="password" class="pass">
                 </div>
-                <div class="marginTop30">
-                    <span class="fontSize30">パスワード(確認用) : </spam><input type="password" name="password_confirmation">
+                <div class="marginTop30 widthMax paddingOpt">
+                    <span class="fontSize30">パスワード(確認用) : </spam><br><input type="password" name="password_confirmation" class="pass_co">
                 </div>
                 <div class="marginTop30">
                     <button type="submit" class="btn btn-warning width150 height50">ログイン</button>
