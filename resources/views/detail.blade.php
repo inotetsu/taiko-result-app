@@ -121,7 +121,7 @@
                         <span class="size2">フルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="full_combo" value="1">
                     </div>
                     <div class="marginBottom5">
-                        <span class="size2">ドンダフルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1">
+                        <span class="size2">全良 : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1">
                     </div>
                     <div>
                         <span class="size2">プレイ回数のみ : </span><input type="checkbox" style="transform: scale(1.5);" name="play_count" value="1">
@@ -167,7 +167,7 @@
                 <div class="data">
                     <p class="marginBottom5">プレイ回数 : {{ $play_count }}</p>
                     <p class="marginBottom5">フルコンボ : {{ $full_combo_count }}</p>
-                    <p>ドンダフルコンボ : {{ $donda_full_combo_count }}</p>
+                    <p>全良 : {{ $donda_full_combo_count }}</p>
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@
                         <option value="5" {{ $order == 5 ? 'selected' :  '' }}>不可の数順</option>
                         <option value="6" {{ $order == 6 ? 'selected' :  '' }}>連打数順</option>
                         <option value="7" {{ $order == 7 ? 'selected' :  '' }}>フルコンのみ</option>
-                        <option value="8" {{ $order == 8 ? 'selected' :  '' }}>ドンフルのみ</option>
+                        <option value="8" {{ $order == 8 ? 'selected' :  '' }}>全良のみ</option>
                     </select>
                 </p>
                 <p>
@@ -228,7 +228,7 @@
                         <div class="widthOpt3">{{ $result->roll_count }}</div>
                         <div class="widthOpt3">
                             @if(($result->full_combo === 1 and $result->donda_full_combo ===1) or ($result->full_combo === 0 and $result->donda_full_combo ===1))
-                                ドンフル
+                                全良
                             @elseif(($result->full_combo === 1 and $result->donda_full_combo ===0))
                                 フルコン
                             @elseif(($result->full_combo === 0 and $result->donda_full_combo ===0))

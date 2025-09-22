@@ -55,7 +55,7 @@
                         <option value="5">かんたん</option>
                     </select>
                     <select name="genre_id" class="genre">
-                        <option value="1">ナムコオリジナル</option>
+                        <option value="1">オリジナル</option>
                         <option value="2">ゲームミュージック</option>
                         <option value="3">ポップス</option>
                         <option value="4">クラシック</option>
