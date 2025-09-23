@@ -119,7 +119,7 @@
                         <span class="size2">
                             王冠 : 
                             @if(($result->full_combo === 1 and $result->donda_full_combo ===1) or ($result->full_combo === 0 and $result->donda_full_combo ===1))
-                                ドンフル
+                                全良
                             @elseif(($result->full_combo === 1 and $result->donda_full_combo ===0))
                                 フルコン
                             @elseif(($result->full_combo === 0 and $result->donda_full_combo ===0))
