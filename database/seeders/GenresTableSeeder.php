@@ -14,7 +14,7 @@ class GenresTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('genres')->insert([
-            ['id' => 1, 'name'=>'ナムコオリジナル'],
+            ['id' => 1, 'name'=>'オリジナル'],
             ['id' => 2, 'name'=>'ゲームミュージック'],
             ['id' => 3, 'name'=>'ポップス'],
             ['id' => 4, 'name'=>'クラシック'],

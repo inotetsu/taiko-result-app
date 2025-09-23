@@ -61,7 +61,7 @@
                         <option value="5" {{$selectedDif=='5' ? 'selected' : '' }}>かんたん</option>
                     </select>
                     <select name="genre_id" class="genre">
-                        <option value="1" {{$selectedGenre=='1' ? 'selected' : '' }}>ナムコオリジナル</option>
+                        <option value="1" {{$selectedGenre=='1' ? 'selected' : '' }}>オリジナル</option>
                         <option value="2" {{$selectedGenre=='2' ? 'selected' : '' }}>ゲームミュージック</option>
                         <option value="3" {{$selectedGenre=='3' ? 'selected' : '' }}>ポップス</option>
                         <option value="4" {{$selectedGenre=='4' ? 'selected' : '' }}>クラシック</option>

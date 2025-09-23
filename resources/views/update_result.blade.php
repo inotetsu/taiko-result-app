@@ -123,7 +123,7 @@
                     </div>
                     <div>
                         <input type="hidden" name="donda_full_combo" value="0">
-                        <span class="size2">ドンダフルコンボ : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1" {{ $donda_full_combo == 1 ? 'checked' : '' }}>
+                        <span class="size2">全良 : </span><input type="checkbox" style="transform: scale(1.5);" name="donda_full_combo" value="1" {{ $donda_full_combo == 1 ? 'checked' : '' }}>
                     </div>
                     <div>
                         <span class="size2">プレイ回数のみ : </span><input type="checkbox" style="transform: scale(1.5);" name="play_count" value="1">
