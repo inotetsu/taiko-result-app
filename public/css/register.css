@@ -82,6 +82,19 @@ body {
     list-style: none;
 }
 
+/*エラーメッセージ*/
+
+.error {
+    margin-top: 60px;
+    margin-bottom: -15px;
+}
+
+.error_mess {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 62, 62);
+}
+
 /*フォーム*/
 
 .width100 {

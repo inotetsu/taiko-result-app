@@ -23,6 +23,15 @@
         </div>
     </div>
 
+    <!--エラーメッセージ-->
+     @if($errors->any())
+        <div class="error">
+            <p class="error_mess">
+                入力ミスがあります(ユーザーネーム15文字以下・パスワード5文字以上)
+            </p>
+        </div>
+     @endif
+
     <!--ボディー-->
     <form action="{{ route('register.store') }}" method="POST">
     @csrf

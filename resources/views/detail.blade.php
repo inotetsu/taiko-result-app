@@ -71,6 +71,13 @@
         <p class="dif">{{ $song->difficulty->name }}</p>
     </div>
 
+     <!--エラーメッセージ-->
+     @if($errors->any())
+        <div class="error">
+            <p class="error_mess">良・可・不可・連打数は半角数字の必須入力です</p>
+        </div>
+     @endif
+
     <!--入力欄-->
     <form action="{{ route('song.result.store',['song' => $song->id]) }}" method="POST">
     @csrf

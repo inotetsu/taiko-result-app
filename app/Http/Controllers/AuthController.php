@@ -19,7 +19,9 @@ class AuthController extends Controller
             return redirect()->intended('/home');
         }
 
-        return back()->onlyInput('email');
+        return back()->withErrors([
+            'login' => 'メールアドレスまたはパスワードが正しくありません'
+        ])->onlyInput('email');
     }
 
     public function logout(Request $request)

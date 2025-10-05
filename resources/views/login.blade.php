@@ -23,6 +23,12 @@
         </div>
     </div>
 
+    @if($errors->has('login'))
+        <div class="error">
+            <p class="error_mess">{{ $errors->first('login') }}</p>
+        </div>
+    @endif
+
     <!--ボディー-->
     <form action="{{ route('login.process') }}" method="POST">
     @csrf

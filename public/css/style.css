@@ -33,6 +33,19 @@ body {
     font-size: 50px;
 }
 
+/*エラーメッセージ*/
+
+.error {
+    margin-top: 60px;
+    margin-bottom: -30px;
+}
+
+.error_mess {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 62, 62);
+}
+
 @media screen and (max-width:826px){
     .titleName {
         font-size: 40px;

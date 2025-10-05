@@ -30,6 +30,13 @@
         </div>
     </div>
 
+    <!--エラーメッセージ-->
+     @if($errors->any())
+        <div class="error">
+            <p class="error_mess">曲名を入力してください</p>
+        </div>
+     @endif
+
     <!--ボディー-->
     <form action="/home/song-add" method="POST">
     @csrf

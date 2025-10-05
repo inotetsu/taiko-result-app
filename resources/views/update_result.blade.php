@@ -69,6 +69,13 @@
         <p class="dif">{{ $song->difficulty->name }}</p>
     </div>
 
+     <!--エラーメッセージ-->
+     @if($errors->any())
+        <div class="error">
+            <p class="error_mess">良・可・不可・連打数は半角数字の必須入力です</p>
+        </div>
+     @endif
+
     <?php
         $full_combo = old('full_combo' , $result->full_combo);
         $donda_full_combo = old('donda_full_combo' , $result->donda_full_combo);
