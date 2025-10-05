@@ -206,7 +206,7 @@
                             'vocaloid_inSet' => $song->genre_id === 6,
                             'variety_inSet' => $song->genre_id === 7,
                         ])>
-                            <span class="add">追加</span>
+                            <span class="add">決定</span>
                 </button>
                 </P>
             </form>

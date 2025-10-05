@@ -30,6 +30,12 @@
         </div>
     </div>
 
+    @if($errors->any())
+        <div class="error">
+            <p class="error_mess">曲名を入力してください</p>
+        </div>
+     @endif
+
     <?php
         $selectedDif = old('difficulty_id',$song->difficulty_id);
         $selectedGenre = old('genre_id',$song->genre_id);
@@ -43,7 +49,7 @@
         <div class="inBody">
             <div class="inInBody div1">
                 <div>
-                    <span class="addSongs">曲を追加してね！</span>
+                    <span class="addSongs">曲を編集してね！</span>
                 </div>
             </div>
             <div class="inInBody">

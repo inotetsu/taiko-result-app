@@ -108,7 +108,7 @@
             'vocaloid_inInSet' => $song->genre_id === 6,
             'variety_inInSet' => $song->genre_id === 7,
             ])>
-                <p class="mess">!!!リザルトを入れてね!!!</p>
+                <p class="mess">!!!リザルトを編集してね!!!</p>
                 <div class="result">
                     <div>
                         <span class="size">良 : </span><input type="text" class="res" name="good_count" value="{{ old( 'good_count' , $result->good_count ) }}">
