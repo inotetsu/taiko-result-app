@@ -224,6 +224,12 @@ body {
     border-radius: 50px;
 }
 
+@media screen and (max-width:921px) {
+    .inSet {
+        height: 650px;
+    }
+}
+
 @media screen and (max-width:838px) {
     .inSet {
         height: 700px;
@@ -268,11 +274,18 @@ body {
     border-radius: 50px;
 }
 
+@media screen and (max-width:921px) {
+    .inInSet {
+        height: 600px;
+    }
+}
+
 @media screen and (max-width:838px) {
     .inInSet {
         height: 650px;
     }
 }
+
 
 /*曲入力欄中身デザイン*/
 
@@ -394,6 +407,7 @@ body {
     .marginOptRoll {
         margin-right: 100px;
     }
+
 }
 
 @media screen and (max-width:838px) {
